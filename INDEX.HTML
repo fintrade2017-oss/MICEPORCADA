@@ -20,8 +20,7 @@
         * { box-sizing: border-box; }
 
         body {
-            margin: 0;
-            padding: 0;
+            margin: 0; padding: 0;
             font-family: 'Montserrat', sans-serif;
             background-color: var(--dark-bg);
             color: var(--text-main);
@@ -30,55 +29,29 @@
 
         /* --- HEADER VIDEO --- */
         .video-header {
-            position: relative;
-            height: 90vh;
-            width: 100%;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+            position: relative; height: 90vh; width: 100%;
+            overflow: hidden; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; text-align: center;
         }
 
         #bg-video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            z-index: 1;
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            object-fit: cover; z-index: 1;
         }
 
         .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
             background: linear-gradient(to bottom, rgba(8,8,10,0.6) 0%, rgba(8,8,10,0.8) 100%);
             z-index: 2;
         }
 
         .lang-toggle {
-            position: absolute;
-            top: 30px;
-            right: 30px;
-            z-index: 10;
-            background: rgba(8, 8, 10, 0.6);
-            border: 1px solid var(--gold);
-            color: var(--gold);
-            padding: 10px 20px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(5px);
+            position: absolute; top: 30px; right: 30px; z-index: 10;
+            background: rgba(8, 8, 10, 0.6); border: 1px solid var(--gold); color: var(--gold);
+            padding: 10px 20px; font-family: 'Montserrat', sans-serif;
+            font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+            cursor: pointer; transition: all 0.3s ease; backdrop-filter: blur(5px);
         }
-
         .lang-toggle:hover { background: var(--gold); color: #000; }
 
         .header-content { position: relative; z-index: 3; max-width: 900px; padding: 20px; }
@@ -87,12 +60,10 @@
             display: flex; justify-content: center; align-items: center;
             gap: 40px; margin-bottom: 30px; flex-wrap: wrap;
         }
-
         .logos-container img { max-height: 80px; width: auto; filter: brightness(0) invert(1); opacity: 0.9; }
 
         .header-content h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.5rem; color: var(--gold);
+            font-family: 'Playfair Display', serif; font-size: 3.5rem; color: var(--gold);
             margin: 0 0 10px 0; letter-spacing: 3px; text-transform: uppercase;
         }
 
@@ -163,18 +134,6 @@
         .input-group input:focus { outline: none; border-color: var(--gold); }
         .input-group small { color:#666; font-size: 0.75rem; }
 
-        .sector-row {
-            display: grid; grid-template-columns: 2fr 1fr 1.5fr;
-            gap: 15px; align-items: center; margin-bottom: 15px;
-            padding-bottom: 10px; border-bottom: 1px dashed #1a1a1e;
-        }
-        .sector-row label { color: var(--text-main); font-size: 0.9rem; }
-        .sector-inputs input {
-            width: 100%; text-align: center; background-color: var(--dark-bg);
-            border: 1px solid var(--border); color: var(--gold-light);
-            padding: 8px; border-radius: 2px;
-        }
-
         /* RESULTS */
         .results-card {
             position: sticky; top: 20px; height: fit-content;
@@ -234,9 +193,9 @@
 
     <!-- MICE INTRO -->
     <section class="mice-intro">
-        <h3 id="mice-title">El Modelo Aman: Escaparate y Exclusividad</h3>
+        <h3 id="mice-title">El Modelo: Peaje, Corner, Gala y Comisiones</h3>
         <div class="mice-text" id="mice-text">
-            Operado por <strong>Aman Resorts</strong>, La Porcada trasciende el lujo tradicional. Este modelo MICE complementario dota de valor incalculable a la membresía: acceso directo a productores, ahorro de tiempo y precios exclusivos frente a la Villa de Madrid o la 5ª Avenida. Con los costes operativos cubiertos por la explotación hotelera, estos eventos generan <strong>ingresos incrementales puros</strong> mediante patrocinios, alquiler de pop-up boutiques (con seguridad incluida) y comisiones de venta, garantizando además la ocupación hotelera antes y después del evento.
+            Operado por <strong>Aman Resorts</strong>, las marcas acceden a un mercado cautivo de +1.000.000 UHNWIs mediante un <strong>Peaje (Membresía)</strong>. Para seducir y cerrar ventas masivas, la marca financia su <strong>Evento de Presentación (Gala majestuosa)</strong> y mantiene un <strong>Punto de Venta (Corner)</strong> en la isla. Las cenas, de coste premium, atraen a los clientes gratuitamente, facilitando técnicas de cierre directo. La Porcada ingresa por los tres conceptos y añade <strong>Comisiones</strong> sobre las ventas realizadas durante el evento y en las ciudades de origen de los miembros post-evento.
         </div>
     </section>
 
@@ -250,47 +209,81 @@
         <div class="dashboard">
             <!-- CONFIG COLUMN -->
             <div class="card">
-                <h4 id="config-rev-title">1. Ingresos por Evento y Patrocinio</h4>
+                <h4 id="config-toll-title">1. El Peaje (Membresía de Marca B2B)</h4>
                 
                 <div class="input-group">
-                    <label id="lbl-days">Días de Explotación (Eventos + Pre/Post Ocupación)</label>
-                    <input type="number" id="event-days" value="45" min="1" max="90">
-                    <small id="hint-days">Incluye días de montaje, evento y estancia de clientes</small>
+                    <label id="lbl-total-events">Total Eventos Organizados por Marcas</label>
+                    <input type="number" id="brand-events" value="30" min="0">
+                    <small id="hint-total-events">Ej: Si Louis Vuitton hace 2 eventos, cuenta como 2. Genera cuota de entrada.</small>
                 </div>
 
-                <div class="sector-row" style="border-bottom: 1px solid var(--gold); padding-bottom: 10px; margin-bottom: 15px;">
-                    <label id="lbl-sector" style="color: var(--gold-light); font-weight: bold;">Sector</label>
-                    <div id="lbl-brands" style="color: var(--gold-light); font-size: 0.8rem; text-align: center; font-weight: bold;">Nº Marcas</div>
-                    <div id="lbl-rate" style="color: var(--gold-light); font-size: 0.8rem; text-align: center; font-weight: bold;">Patrocinio/Día (€)</div>
+                <div class="input-group">
+                    <label id="lbl-entry-fee">Cuota de Entrada por Evento ($)</label>
+                    <input type="number" id="entry-fee" value="250000" min="0" step="10000">
+                    <small id="hint-entry-fee">Derecho de acceso al mercado cautivo. Directo a arcas.</small>
                 </div>
+
+                <div class="input-group">
+                    <label id="lbl-total-brands">Total Marcas Socias (Acumulado)</label>
+                    <input type="number" id="total-brands" value="50" min="0">
+                    <small id="hint-total-brands">Marcas únicas en el ecosistema.</small>
+                </div>
+
+                <div class="input-group">
+                    <label id="lbl-annual-fee">Cuota de Mantenimiento Anual ($)</label>
+                    <input type="number" id="annual-fee" value="50000" min="0" step="5000">
+                    <small id="hint-annual-fee">Derecho a estar en nuestros eventos (Beach Cup) y mantener estatus.</small>
+                </div>
+
+                <!-- CORNER SECTION -->
+                <div class="section-divider" id="config-corner-title">2. El Corner (Punto de Venta Diario)</div>
                 
-                <div id="sectors-container"></div>
+                <div class="input-group">
+                    <label id="lbl-corner-days">Días Totales de Operation del Corner</label>
+                    <input type="number" id="corner-days" value="45" min="0">
+                    <small id="hint-corner-days">Días donde la marca tiene su espacio físico activo</small>
+                </div>
 
-                <!-- RETAIL SECTION -->
-                <div class="section-divider" id="config-retail-title">2. Ingresos Retail (Pop-Up Boutiques)</div>
+                <div class="input-group">
+                    <label id="lbl-brands-per-day">Nº Marcas Operando Simultáneamente</label>
+                    <input type="number" id="brands-per-day" value="10" min="0">
+                    <small id="hint-brands-per-day">Media de marcas con corner activo cada día</small>
+                </div>
+
+                <div class="input-group">
+                    <label id="lbl-daily-rate">Tarifa Diaria por Corner (Espacio+Seg) ($)</label>
+                    <input type="number" id="daily-rate" value="35000" min="0" step="1000">
+                    <small id="hint-daily-rate">Alquiler pop-up, seguridad privada, logística diaria</small>
+                </div>
+
+                <!-- GALA SECTION -->
+                <div class="section-divider" id="config-gala-title">3. El Evento (Presentación y Gala Majestyosa)</div>
                 
                 <div class="input-group">
-                    <label id="lbl-rent">Alquiler Espacio + Seguridad (€/día/marca)</label>
-                    <input type="number" id="retail-rent" value="15000" min="0" step="1000">
-                    <small id="hint-rent">Espacio físico en el resort operado por Aman</small>
+                    <label id="lbl-galas">Nº Total de Galas / Desfiles</label>
+                    <input type="number" id="total-galas" value="30" min="0">
+                    <small id="hint-galas">Normalmente 1 gala por cada evento organizado</small>
                 </div>
 
                 <div class="input-group">
-                    <label id="lbl-items">Artículos de Lujo Vendidos por Día</label>
-                    <input type="number" id="items-sold" value="15" min="0">
-                    <small id="hint-items">Relojes, bolsos, joyas, coches vendidos diariamente</small>
+                    <label id="lbl-gala-cost">Coste Facturado a la Marca por Gala ($)</label>
+                    <input type="number" id="gala-cost" value="500000" min="0" step="50000">
+                    <small id="hint-gala-cost">Cena premium, montaje majestuoso, artistas. Pagado por la marca.</small>
+                </div>
+
+                <!-- COMMISSIONS SECTION -->
+                <div class="section-divider" id="config-comm-title">4. Comisiones (Ventas Durante + Post-Evento)</div>
+                
+                <div class="input-group">
+                    <label id="lbl-sales-volume">Volumen de Ventas Generado por Evento ($)</label>
+                    <input type="number" id="sales-volume" value="3000000" min="0" step="100000">
+                    <small id="hint-sales-volume">Incluye cierres en la gala + ventas posteriores en ciudades de origen</small>
                 </div>
 
                 <div class="input-group">
-                    <label id="lbl-ticket">Ticket Medio (€)</label>
-                    <input type="number" id="avg-ticket" value="85000" min="0" step="5000">
-                    <small id="hint-ticket">Precio medio de adquisición (Ej: 85.000€)</small>
-                </div>
-
-                <div class="input-group">
-                    <label id="lbl-commission">Comisión La Porcada sobre Venta (%)</label>
+                    <label id="lbl-commission">Comisión La Porcada sobre Ventas (%)</label>
                     <input type="number" id="commission" value="8" min="0" max="100">
-                    <small id="hint-commission">Margen directo por facilitar la venta</small>
+                    <small id="hint-commission">Ingreso por facilitar el mercado y el cierre</small>
                 </div>
             </div>
 
@@ -300,7 +293,7 @@
                 
                 <div class="total-box net-profit-box">
                     <div class="total-label" id="lbl-net-profit">Ingresos Incrementales Totales</div>
-                    <div class="total-value net-profit-value" id="total-revenue">0.00 €</div>
+                    <div class="total-value net-profit-value" id="total-revenue">$0</div>
                     <div class="total-label" style="color: var(--profit-green);" id="profit-margin">100% Margen Directo (Costes asumidos por Hotel)</div>
                 </div>
 
@@ -339,117 +332,90 @@
             es: {
                 btn: "ENGLISH",
                 headerSub: "Simulador de Ingresos Incrementales MICE",
-                miceTitle: "El Modelo Aman: Escaparate y Exclusividad",
-                miceText: 'Operado por <strong>Aman Resorts</strong>, La Porcada trasciende el lujo tradicional. Este modelo MICE complementario dota de valor incalculable a la membresía: acceso directo a productores, ahorro de tiempo y precios exclusivos frente a la Villa de Madrid o la 5ª Avenida. Con los costes operativos cubiertos por la explotación hotelera, estos eventos generan <strong>ingresos incrementales puros</strong> mediante patrocinios, alquiler de pop-up boutiques (con seguridad incluida) y comisiones de venta, garantizando además la ocupación hotelera antes y después del evento.',
+                miceTitle: "El Modelo: Peaje, Corner, Gala y Comisiones",
+                miceText: 'Operado por <strong>Aman Resorts</strong>, las marcas acceden a un mercado cautivo de +1.000.000 UHNWIs mediante un <strong>Peaje (Membresía)</strong>. Para seducir y cerrar ventas masivas, la marca financia su <strong>Evento de Presentación (Gala majestuosa)</strong> y mantiene un <strong>Punto de Venta (Corner)</strong> en la isla. Las cenas, de coste premium, atraen a los clientes gratuitamente, facilitando técnicas de cierre directo. La Porcada ingresa por los tres conceptos y añade <strong>Comisiones</strong> sobre las ventas realizadas durante el evento y en las ciudades de origen de los miembros post-evento.',
                 dashTitle: "Proyección de Ingresos Incrementales",
                 dashSub: "Mercado Objetivo: >1.000.000 UHNWIs y Entorno",
-                configRev: "1. Ingresos por Evento y Patrocinio",
-                lblDays: "Días de Explotación (Eventos + Pre/Post Ocupación)",
-                hintDays: "Incluye días de montaje, evento y estancia de clientes",
-                lblSector: "Sector",
-                lblBrands: "Nº Marcas",
-                lblRate: "Patrocinio/Día (€)",
-                configRetail: "2. Ingresos Retail (Pop-Up Boutiques)",
-                lblRent: "Alquiler Espacio + Seguridad (€/día/marca)",
-                hintRent: "Espacio físico en el resort operado por Aman",
-                lblItems: "Artículos de Lujo Vendidos por Día",
-                hintItems: "Relojes, bolsos, joyas, coches vendidos diariamente",
-                lblTicket: "Ticket Medio (€)",
-                hintTicket: "Precio medio de adquisición (Ej: 85.000€)",
-                lblCommission: "Comisión La Porcada sobre Venta (%)",
-                hintCommission: "Margen directo por facilitar la venta",
+                configToll: "1. El Peaje (Membresía de Marca B2B)",
+                lblTotalEvents: "Total Eventos Organizados por Marcas",
+                hintTotalEvents: "Ej: Si Louis Vuitton hace 2 eventos, cuenta como 2. Genera cuota de entrada.",
+                lblEntryFee: "Cuota de Entrada por Evento ($)",
+                hintEntryFee: "Derecho de acceso al mercado cautivo. Directo a arcas.",
+                lblTotalBrands: "Total Marcas Socias (Acumulado)",
+                hintTotalBrands: "Marcas únicas en el ecosistema.",
+                lblAnnualFee: "Cuota de Mantenimiento Anual ($)",
+                hintAnnualFee: "Derecho a estar en nuestros eventos (Beach Cup) y mantener estatus.",
+                configCorner: "2. El Corner (Punto de Venta Diario)",
+                lblCornerDays: "Días Totales de Operation del Corner",
+                hintCornerDays: "Días donde la marca tiene su espacio físico activo",
+                lblBrandsPerDay: "Nº Marcas Operando Simultáneamente",
+                hintBrandsPerDay: "Media de marcas con corner activo cada día",
+                lblDailyRate: "Tarifa Diaria por Corner (Espacio+Seg) ($)",
+                hintDailyRate: "Alquiler pop-up, seguridad privada, logística diaria",
+                configGala: "3. El Evento (Presentación y Gala Majestyosa)",
+                lblGalas: "Nº Total de Galas / Desfiles",
+                hintGalas: "Normalmente 1 gala por cada evento organizado",
+                lblGalaCost: "Coste Facturado a la Marca por Gala ($)",
+                hintGalaCost: "Cena premium, montaje majestuoso, artistas. Pagado por la marca.",
+                configComm: "4. Comisiones (Ventas Durante + Post-Evento)",
+                lblSalesVolume: "Volumen de Ventas Generado por Evento ($)",
+                hintSalesVolume: "Incluye cierres en la gala + ventas posteriores en ciudades de origen",
+                lblCommission: "Comisión La Porcada sobre Ventas (%)",
+                hintCommission: "Ingreso por facilitar el mercado y el cierre",
                 resultsTitle: "Resultados Financieros",
                 lblNetProfit: "Ingresos Incrementales Totales",
                 lblMargin: "100% Margen Directo (Costes asumidos por Hotel)",
-                lblSponsor: "Patrocinios de Marcas",
-                lblRetailRent: "Alquiler Pop-Up Boutiques",
-                lblSalesComm: "Comisiones por Ventas Directas",
-                videoFallback: "Tu navegador no soporta la etiquada de video.",
-                sectors: [
-                    "Alta Costura y Marroquinería",
-                    "Perfumería de Nicho",
-                    "Joyería y Relojería",
-                    "Automoción (Hypercars)",
-                    "Náutica y Aeronáutica",
-                    "Defensa y Seguridad Privada"
-                ]
+                lblTollRev: "1. Peajes (Membresías)",
+                lblCornerRev: "2. Facturación Corners",
+                lblGalaRev: "3. Facturación Galas",
+                lblCommRev: "4. Comisiones de Ventas",
+                videoFallback: "Tu navegador no soporta la etiquada de video."
             },
             en: {
                 btn: "ESPAÑOL",
                 headerSub: "MICE Incremental Revenue Simulator",
-                miceTitle: "The Aman Model: Showcase & Exclusivity",
-                miceText: 'Operated by <strong>Aman Resorts</strong>, La Porcada transcends traditional luxury. This complementary MICE model provides incalculable value to the membership: direct access to producers, time savings, and exclusive prices compared to Madrid\'s Villa or 5th Avenue. With operating costs covered by the hotel management, these events generate <strong>pure incremental revenue</strong> through sponsorships, pop-up boutique rentals (including security), and sales commissions, while also guaranteeing hotel occupancy before and after the event.',
+                miceTitle: "The Model: Toll, Corner, Gala & Commissions",
+                miceText: 'Operated by <strong>Aman Resorts</strong>, brands access a captive market of +1,000,000 UHNWIs through a <strong>Toll (Membership)</strong>. To seduce and close massive sales, the brand finances its <strong>Presentation Event (Majestic Gala)</strong> and maintains a <strong>Point of Sale (Corner)</strong> on the island. The premium-cost dinners attract clients for free, facilitating direct closing techniques. La Porcada earns revenue from all three concepts and adds <strong>Commissions</strong> on sales made during the event and in the members\' home cities post-event.',
                 dashTitle: "Incremental Revenue Projections",
                 dashSub: "Target Market: >1,000,000 UHNWIs & Network",
-                configRev: "1. Event & Sponsorship Revenue",
-                lblDays: "Operating Days (Events + Pre/Post Occupancy)",
-                hintDays: "Includes setup, event, and client stay days",
-                lblSector: "Sector",
-                lblBrands: "Nº Brands",
-                lblRate: "Sponsorship/Day (€)",
-                configRetail: "2. Retail Revenue (Pop-Up Boutiques)",
-                lblRent: "Space Rental + Security (€/day/brand)",
-                hintRent: "Physical space in the Aman-operated resort",
-                lblItems: "Luxury Items Sold Per Day",
-                hintItems: "Watches, bags, jewelry, cars sold daily",
-                lblTicket: "Average Ticket (€)",
-                hintTicket: "Average acquisition price (E.g.: €85,000)",
+                configToll: "1. The Toll (B2B Brand Membership)",
+                lblTotalEvents: "Total Events Organized by Brands",
+                hintTotalEvents: "E.g: If Louis Vuitton does 2 events, it counts as 2. Generates entry fee.",
+                lblEntryFee: "Entry Fee per Event ($)",
+                hintEntryFee: "Right to access captive market. Direct to treasury.",
+                lblTotalBrands: "Total Partner Brands (Accumulated)",
+                hintTotalBrands: "Unique brands in the ecosystem.",
+                lblAnnualFee: "Annual Maintenance Fee ($)",
+                hintAnnualFee: "Right to be at our events (Beach Cup) and maintain status.",
+                configCorner: "2. The Corner (Daily Point of Sale)",
+                lblCornerDays: "Total Corner Operation Days",
+                hintCornerDays: "Days where the brand has its physical space active",
+                lblBrandsPerDay: "Nº Brands Operating Simultaneously",
+                hintBrandsPerDay: "Average brands with active corner per day",
+                lblDailyRate: "Daily Rate per Corner (Space+Security) ($)",
+                hintDailyRate: "Pop-up rental, private security, daily logistics",
+                configGala: "3. The Event (Presentation & Majestic Gala)",
+                lblGalas: "Total Nº of Galas / Shows",
+                hintGalas: "Usually 1 gala per organized event",
+                lblGalaCost: "Cost Billed to Brand per Gala ($)",
+                hintGalaCost: "Premium dinner, majestic setup, artists. Paid by the brand.",
+                configComm: "4. Commissions (During + Post-Event Sales)",
+                lblSalesVolume: "Sales Volume Generated per Event ($)",
+                hintSalesVolume: "Includes gala closings + post-event sales in home cities",
                 lblCommission: "La Porcada Sales Commission (%)",
-                hintCommission: "Direct margin for facilitating the sale",
+                hintCommission: "Revenue for facilitating market and closing",
                 resultsTitle: "Financial Output",
                 lblNetProfit: "Total Incremental Revenue",
                 lblMargin: "100% Direct Margin (Costs absorbed by Hotel)",
-                lblSponsor: "Brand Sponsorships",
-                lblRetailRent: "Pop-Up Boutique Rentals",
-                lblSalesComm: "Direct Sales Commissions",
-                videoFallback: "Your browser does not support the video tag.",
-                sectors: [
-                    "Haute Couture & Leather Goods",
-                    "Niche Perfumery",
-                    "Jewelry & Watchmaking",
-                    "Automotive (Hypercars)",
-                    "Yachting & Aviation",
-                    "Defense & Private Security"
-                ]
+                lblTollRev: "1. Tolls (Memberships)",
+                lblCornerRev: "2. Corner Billing",
+                lblGalaRev: "3. Gala Billing",
+                lblCommRev: "4. Sales Commissions",
+                videoFallback: "Your browser does not support the video tag."
             }
         };
 
         let currentLang = 'es';
-
-        // --- DATA STRUCTURE ---
-        const sectorData = [
-            { count: 3, rate: 80000 },
-            { count: 2, rate: 50000 },
-            { count: 4, rate: 120000 },
-            { count: 2, rate: 150000 },
-            { count: 2, rate: 180000 },
-            { count: 1, rate: 200000 }
-        ];
-
-        const container = document.getElementById('sectors-container');
-
-        function renderSectors() {
-            container.innerHTML = '';
-            sectorData.forEach((sector, index) => {
-                const row = document.createElement('div');
-                row.className = 'sector-row';
-                row.innerHTML = `
-                    <label>${translations[currentLang].sectors[index]}</label>
-                    <div class="sector-inputs">
-                        <input type="number" id="count-${index}" value="${sector.count}" min="0" onchange="updateSectorData(${index}, 'count', this.value)">
-                    </div>
-                    <div class="sector-inputs">
-                        <input type="number" id="rate-${index}" value="${sector.rate}" min="0" step="10000" onchange="updateSectorData(${index}, 'rate', this.value)">
-                    </div>
-                `;
-                container.appendChild(row);
-            });
-        }
-
-        function updateSectorData(index, key, value) {
-            sectorData[index][key] = parseInt(value) || 0;
-            calculateFinances();
-        }
 
         // --- TRANSLATION LOGIC ---
         function toggleLanguage() {
@@ -462,19 +428,30 @@
             document.getElementById('mice-text').innerHTML = t.miceText;
             document.getElementById('dash-title').innerText = t.dashTitle;
             document.getElementById('dash-subtitle').innerText = t.dashSub;
-            document.getElementById('config-rev-title').innerText = t.configRev;
-            document.getElementById('lbl-days').innerText = t.lblDays;
-            document.getElementById('hint-days').innerText = t.hintDays;
-            document.getElementById('lbl-sector').innerText = t.lblSector;
-            document.getElementById('lbl-brands').innerText = t.lblBrands;
-            document.getElementById('lbl-rate').innerText = t.lblRate;
-            document.getElementById('config-retail-title').innerText = t.configRetail;
-            document.getElementById('lbl-rent').innerText = t.lblRent;
-            document.getElementById('hint-rent').innerText = t.hintRent;
-            document.getElementById('lbl-items').innerText = t.lblItems;
-            document.getElementById('hint-items').innerText = t.hintItems;
-            document.getElementById('lbl-ticket').innerText = t.lblTicket;
-            document.getElementById('hint-ticket').innerText = t.hintTicket;
+            document.getElementById('config-toll-title').innerText = t.configToll;
+            document.getElementById('lbl-total-events').innerText = t.lblTotalEvents;
+            document.getElementById('hint-total-events').innerText = t.hintTotalEvents;
+            document.getElementById('lbl-entry-fee').innerText = t.lblEntryFee;
+            document.getElementById('hint-entry-fee').innerText = t.hintEntryFee;
+            document.getElementById('lbl-total-brands').innerText = t.lblTotalBrands;
+            document.getElementById('hint-total-brands').innerText = t.hintTotalBrands;
+            document.getElementById('lbl-annual-fee').innerText = t.lblAnnualFee;
+            document.getElementById('hint-annual-fee').innerText = t.hintAnnualFee;
+            document.getElementById('config-corner-title').innerText = t.configCorner;
+            document.getElementById('lbl-corner-days').innerText = t.lblCornerDays;
+            document.getElementById('hint-corner-days').innerText = t.hintCornerDays;
+            document.getElementById('lbl-brands-per-day').innerText = t.lblBrandsPerDay;
+            document.getElementById('hint-brands-per-day').innerText = t.hintBrandsPerDay;
+            document.getElementById('lbl-daily-rate').innerText = t.lblDailyRate;
+            document.getElementById('hint-daily-rate').innerText = t.hintDailyRate;
+            document.getElementById('config-gala-title').innerText = t.configGala;
+            document.getElementById('lbl-galas').innerText = t.lblGalas;
+            document.getElementById('hint-galas').innerText = t.hintGalas;
+            document.getElementById('lbl-gala-cost').innerText = t.lblGalaCost;
+            document.getElementById('hint-gala-cost').innerText = t.hintGalaCost;
+            document.getElementById('config-comm-title').innerText = t.configComm;
+            document.getElementById('lbl-sales-volume').innerText = t.lblSalesVolume;
+            document.getElementById('hint-sales-volume').innerText = t.hintSalesVolume;
             document.getElementById('lbl-commission').innerText = t.lblCommission;
             document.getElementById('hint-commission').innerText = t.hintCommission;
             document.getElementById('results-title').innerText = t.resultsTitle;
@@ -482,79 +459,96 @@
             document.getElementById('profit-margin').innerText = t.lblMargin;
             document.getElementById('video-fallback').innerText = t.videoFallback;
 
-            renderSectors();
             calculateFinances();
         }
 
         // Listeners for inputs
-        ['event-days', 'retail-rent', 'items-sold', 'avg-ticket', 'commission'].forEach(id => {
+        ['brand-events', 'entry-fee', 'total-brands', 'annual-fee', 'corner-days', 'brands-per-day', 'daily-rate', 'total-galas', 'gala-cost', 'sales-volume', 'commission'].forEach(id => {
             document.getElementById(id).addEventListener('input', calculateFinances);
         });
 
         function formatCurrency(num) {
-            return new Intl.NumberFormat(currentLang === 'es' ? 'es-ES' : 'en-US', { style: 'currency', currency: 'EUR', minimumFractionDigits: 0 }).format(num);
+            return new Intl.NumberFormat(currentLang === 'es' ? 'es-ES' : 'en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0 }).format(num);
         }
 
         function calculateFinances() {
             const t = translations[currentLang];
-            const days = parseInt(document.getElementById('event-days').value) || 0;
             
-            // Retail Inputs
-            const retailRent = parseInt(document.getElementById('retail-rent').value) || 0;
-            const itemsSold = parseInt(document.getElementById('items-sold').value) || 0;
-            const avgTicket = parseInt(document.getElementById('avg-ticket').value) || 0;
+            // 1. Toll Revenue (Membresías)
+            const brandEvents = parseInt(document.getElementById('brand-events').value) || 0;
+            const entryFee = parseInt(document.getElementById('entry-fee').value) || 0;
+            const totalBrands = parseInt(document.getElementById('total-brands').value) || 0;
+            const annualFee = parseInt(document.getElementById('annual-fee').value) || 0;
+
+            const totalEntryRev = brandEvents * entryFee;
+            const totalAnnualRev = totalBrands * annualFee;
+            const totalTollRev = totalEntryRev + totalAnnualRev;
+            
+            // 2. Corner Revenue (Punto de Venta Diario)
+            const cornerDays = parseInt(document.getElementById('corner-days').value) || 0;
+            const brandsPerDay = parseInt(document.getElementById('brands-per-day').value) || 0;
+            const dailyRate = parseInt(document.getElementById('daily-rate').value) || 0;
+
+            const totalCornerRev = cornerDays * brandsPerDay * dailyRate;
+
+            // 3. Gala Revenue (Evento y Cena)
+            const totalGalas = parseInt(document.getElementById('total-galas').value) || 0;
+            const galaCost = parseInt(document.getElementById('gala-cost').value) || 0;
+
+            const totalGalaRev = totalGalas * galaCost;
+
+            // 4. Commission Revenue (Ventas Durante + Post-Evento)
+            const salesVolume = parseInt(document.getElementById('sales-volume').value) || 0;
             const commission = parseInt(document.getElementById('commission').value) || 0;
 
-            let totalRevenue = 0;
-            let revHTML = '';
-            let sectorsTotal = 0;
-            let totalBrands = 0;
+            const totalSalesVolume = brandEvents * salesVolume;
+            const totalCommRev = totalSalesVolume * (commission / 100);
 
-            // 1. Sponsorship Revenue
-            sectorData.forEach((sector, index) => {
-                const sectorRevenue = sector.count * sector.rate * days;
-                sectorsTotal += sectorRevenue;
-                totalBrands += sector.count;
-                
-                if(sector.count > 0) {
-                    revHTML += `
-                        <div class="breakdown-item">
-                            <span class="breakdown-label">${t.sectors[index]} (${sector.count})</span>
-                            <span class="breakdown-value">${formatCurrency(sectorRevenue)}</span>
-                        </div>`;
-                }
-            });
-
-            // 2. Retail Space Rental Revenue
-            const totalRetailRent = totalBrands * retailRent * days;
-
-            // 3. Sales Commission Revenue
-            const totalSales = itemsSold * avgTicket * days;
-            const totalCommission = totalSales * (commission / 100);
-
-            totalRevenue = sectorsTotal + totalRetailRent + totalCommission;
+            // Total Revenue
+            const totalRevenue = totalTollRev + totalCornerRev + totalGalaRev + totalCommRev;
 
             // Update UI
             document.getElementById('total-revenue').innerText = formatCurrency(totalRevenue);
             document.getElementById('breakdown-revenue').innerHTML = `
                 <div class="breakdown-item" style="border-bottom: 2px solid var(--gold); margin-bottom:10px; padding-bottom:10px;">
-                    <span class="breakdown-label" style="color:var(--gold-light); font-weight:bold;">${t.lblSponsor}</span>
-                    <span class="breakdown-value" style="color:var(--gold-light); font-weight:bold;">${formatCurrency(sectorsTotal)}</span>
-                </div>
-                ${revHTML}
-                <div class="breakdown-item" style="margin-top:15px; border-top: 1px solid var(--border); padding-top:15px;">
-                    <span class="breakdown-label">${t.lblRetailRent} (${totalBrands} marcas)</span>
-                    <span class="breakdown-value">${formatCurrency(totalRetailRent)}</span>
+                    <span class="breakdown-label" style="color:var(--gold-light); font-weight:bold;">${t.lblTollRev}</span>
+                    <span class="breakdown-value" style="color:var(--gold-light); font-weight:bold;">${formatCurrency(totalTollRev)}</span>
                 </div>
                 <div class="breakdown-item">
-                    <span class="breakdown-label">${t.lblSalesComm} (${commission}% sobre ${formatCurrency(totalSales)})</span>
-                    <span class="breakdown-value">${formatCurrency(totalCommission)}</span>
+                    <span class="breakdown-label">- Entradas (${brandEvents} ev.)</span>
+                    <span class="breakdown-value">${formatCurrency(totalEntryRev)}</span>
+                </div>
+                <div class="breakdown-item">
+                    <span class="breakdown-label">- Mantenimiento (${totalBrands} m.)</span>
+                    <span class="breakdown-value">${formatCurrency(totalAnnualRev)}</span>
+                </div>
+                
+                <div class="breakdown-item" style="margin-top:15px; border-top: 1px solid var(--border); padding-top:15px; border-bottom: 2px solid var(--gold); margin-bottom:10px; padding-bottom:10px;">
+                    <span class="breakdown-label" style="color:var(--gold-light); font-weight:bold;">${t.lblCornerRev}</span>
+                    <span class="breakdown-value" style="color:var(--gold-light); font-weight:bold;">${formatCurrency(totalCornerRev)}</span>
+                </div>
+
+                <div class="breakdown-item" style="margin-top:15px; border-top: 1px solid var(--border); padding-top:15px; border-bottom: 2px solid var(--gold); margin-bottom:10px; padding-bottom:10px;">
+                    <span class="breakdown-label" style="color:var(--gold-light); font-weight:bold;">${t.lblGalaRev}</span>
+                    <span class="breakdown-value" style="color:var(--gold-light); font-weight:bold;">${formatCurrency(totalGalaRev)}</span>
+                </div>
+                <div class="breakdown-item">
+                    <span class="breakdown-label">- ${totalGalas} Galas a ${formatCurrency(galaCost)}</span>
+                    <span class="breakdown-value">${formatCurrency(totalGalaRev)}</span>
+                </div>
+
+                <div class="breakdown-item" style="margin-top:15px; border-top: 1px solid var(--profit-green); padding-top:15px; border-bottom: 2px solid var(--profit-green); margin-bottom:10px; padding-bottom:10px;">
+                    <span class="breakdown-label" style="color: var(--profit-green); font-weight: bold;">${t.lblCommRev}</span>
+                    <span class="breakdown-value" style="color: var(--profit-green); font-weight: bold;">${formatCurrency(totalCommRev)}</span>
+                </div>
+                <div class="breakdown-item">
+                    <span class="breakdown-label">- ${commission}% sobre ${formatCurrency(totalSalesVolume)}</span>
+                    <span class="breakdown-value">${formatCurrency(totalCommRev)}</span>
                 </div>
             `;
         }
 
         // INIT
-        renderSectors();
         calculateFinances();
     </script>
 </body>
